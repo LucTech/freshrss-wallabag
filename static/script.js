@@ -37,14 +37,6 @@ $(document).ready(function () {
         save_wallabag(active);
         return false;
     });
-});
-
-$(document).ready(function () {
-    $('#stream .flux a.wallabag').on('click', function () {
-        var active = $(this).parents(".flux");
-        save_wallabag(active);
-        return false;
-    });
 
     $(this).keydown(function (e) {
         if (e.target.closest('input, textarea') || e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) {
